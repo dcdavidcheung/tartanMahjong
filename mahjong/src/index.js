@@ -1,6 +1,68 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
+import bamboo1 from './tileImages/1bamboo.png';
+import bamboo2 from './tileImages/2bamboo.png';
+import bamboo3 from './tileImages/3bamboo.png';
+import bamboo4 from './tileImages/4bamboo.png';
+import bamboo5 from './tileImages/5bamboo.png';
+import bamboo6 from './tileImages/6bamboo.png';
+import bamboo7 from './tileImages/7bamboo.png';
+import bamboo8 from './tileImages/8bamboo.png';
+import bamboo9 from './tileImages/9bamboo.png';
+import dot1 from './tileImages/1dot.png';
+import dot2 from './tileImages/2dot.png';
+import dot3 from './tileImages/3dot.png';
+import dot4 from './tileImages/4dot.png';
+import dot5 from './tileImages/5dot.png';
+import dot6 from './tileImages/6dot.png';
+import dot7 from './tileImages/7dot.png';
+import dot8 from './tileImages/8dot.png';
+import dot9 from './tileImages/9dot.png';
+import character1 from './tileImages/1character.png';
+import character2 from './tileImages/2character.png';
+import character3 from './tileImages/3character.png';
+import character4 from './tileImages/4character.png';
+import character5 from './tileImages/5character.png';
+import character6 from './tileImages/6character.png';
+import character7 from './tileImages/7character.png';
+import character8 from './tileImages/8character.png';
+import character9 from './tileImages/9character.png';
+import greend from './tileImages/dgreen.png';
+import redd from './tileImages/dred.png';
+import whited from './tileImages/dwhite.png';
+import eastw from './tileImages/weast.png';
+import northw from './tileImages/wnorth.png';
+import southw from './tileImages/wsouth.png';
+import westw from './tileImages/wwest.png';
+import f1 from './miscImages/f1.png';
+import f2 from './miscImages/f2.png';
+import f3 from './miscImages/f3.png';
+import f4 from './miscImages/f4.png';
+import s1 from './miscImages/s1.png';
+import s2 from './miscImages/s2.png';
+import s3 from './miscImages/s3.png';
+import s4 from './miscImages/s4.png';
 import './index.css';
+
+var randy = Math.floor(Math.random() * 42);
+var randy1 = Math.floor(Math.random() * 42);
+var randy2 = Math.floor(Math.random() * 42);
+var randy3 = Math.floor(Math.random() * 42);
+var randy4 = Math.floor(Math.random() * 42);
+var randy5 = Math.floor(Math.random() * 42);
+var randy6 = Math.floor(Math.random() * 42);
+var randy7 = Math.floor(Math.random() * 42);
+var randy8 = Math.floor(Math.random() * 42);
+var randy9 = Math.floor(Math.random() * 42);
+var randy10 = Math.floor(Math.random() * 42);
+var randy11 = Math.floor(Math.random() * 42);
+var randy12 = Math.floor(Math.random() * 42);
+var imgs = [bamboo1,bamboo2,bamboo3,bamboo4,bamboo5,bamboo6,bamboo7,bamboo8,bamboo9,
+            dot1,dot2,dot3,dot4,dot5,dot6,dot7,dot8,dot9,
+            character1,character2,character3,character4,character5,character6,character7,
+            character8,character9,
+            greend,redd,whited,eastw,northw,southw,westw,
+            f1,f2,f3,f4,s1,s2,s3,s4];
 
 function Square(props) {
   return (
@@ -40,19 +102,58 @@ class Board extends React.Component {
     return (
       <div>
         <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-      	  {this.renderSquare(3)}
-      	  {this.renderSquare(4)}
-      	  {this.renderSquare(5)}
-      	  {this.renderSquare(6)}
-      	  {this.renderSquare(7)}
-      	  {this.renderSquare(8)}
-      	  {this.renderSquare(9)}
+        {this.renderSquare(0)}
+        <div className="logo">
+          <img src={imgs[randy]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(1)}
+         <div className="logo">
+          <img src={imgs[randy1]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(2)}
+          <div className="logo">
+          <img src={imgs[randy2]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(3)}
+          <div className="logo">
+          <img src={imgs[randy3]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(4)}
+          <div className="logo">
+          <img src={imgs[randy4]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(5)}
+          <div className="logo">
+          <img src={imgs[randy5]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(6)}
+          <div className="logo">
+          <img src={imgs[randy6]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(7)}
+          <div className="logo">
+          <img src={imgs[randy7]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(8)}
+          <div className="logo">
+          <img src={imgs[randy8]} width="40" height="60" />
+        </div>
+                  {this.renderSquare(9)}
+          <div className="logo">
+          <img src={imgs[randy9]} width="40" height="60" />
+        </div>
       	  {this.renderSquare(10)}
+          <div className="logo">
+          <img src={imgs[randy10]} width="40" height="60" />
+        </div>
       	  {this.renderSquare(11)}
-      	  {this.renderSquare(12)}  
+          <div className="logo">
+          <img src={imgs[randy11]} width="40" height="60" />
+        </div>
+      	  {this.renderSquare(12)} 
+          <div className="logo">
+          <img src={imgs[randy12]} width="40" height="60" />
+        </div> 
         </div>
         <div className="board-row">
           {this.renderSquare(13)}
